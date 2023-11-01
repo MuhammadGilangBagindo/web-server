@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{judul}}</title>
+    <link rel="icon" href="/img/logo.png">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <div class="content-wrapper">
+            <img class="portrait" src="img/foto-saya.jpg" alt="Foto Profil">
+            <div class="bio">
+                <p>Nama: {{nama}}</p>
+                <p>NIM: {{nim}}</p>
+                <p>Tempat, Tanggal Lahir: {{ttl}}</p>
+                <p>Alamat: {{alamat}}</p>
+                <p>Telepon: {{telepon}}</p>
+                <p>Whatsapp: {{wa}}</p>
+                <p>Email: {{email}}</p>
+                <p>Pendidikan: {{pendidikan.[0].prodi}} {{pendidikan.[0].institusi}}</p>
+                <p>Hobi: {{#each hobi}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}</p>    
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+</body>
+
+</html>

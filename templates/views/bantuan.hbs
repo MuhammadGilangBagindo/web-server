@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Halaman Bantuan</title>
+    <link rel="icon" href="/img/logo.png">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <div class="faq">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+
+            <h3>a. Halaman ini digunakan untuk apa?</h3>
+            <p><strong>Jawaban:</strong> Halaman ini digunakan untuk memberikan informasi dan panduan penggunaan 
+            aplikasi cek cuaca. Pertanyaan yang sering ditanyakan akan ditampilkan beserta jawabannya di sini.</p>
+
+            <h3>b. Apa itu API?</h3>
+            <p><strong>Jawaban:</strong> API singkatan dari Application Programming Interface. 
+            API adalah serangkaian aturan dan protokol yang memungkinkan berbagai perangkat lunak atau aplikasi untuk 
+            berkomunikasi satu sama lain. Ini memungkinkan pengembang untuk menggunakan fungsionalitas atau layanan dari 
+            perangkat lunak atau platform lain tanpa perlu memahami detail internalnya. 
+            API memungkinkan aplikasi untuk mengirimkan permintaan dan menerima respons melalui kumpulan aturan dan 
+            protokol yang ditentukan. API digunakan dalam berbagai konteks, termasuk pengembangan perangkat lunak, 
+            aplikasi web, perangkat seluler, dan banyak lagi. Contoh penggunaan API termasuk integrasi media sosial, 
+            pembayaran online, pengambilan data dari layanan pihak ketiga, dan banyak lagi. 
+            API dapat berbentuk RESTful API (Representational State Transfer), SOAP (Simple Object Access Protocol), 
+            GraphQL, dan berbagai protokol lainnya. Mereka memainkan peran kunci dalam ekosistem perangkat lunak modern 
+            dengan memungkinkan berbagai aplikasi dan layanan untuk berinteraksi dan bekerja bersama.</p>
+
+            <h3>c. API apa yang digunakan dalam aplikasi ini?</h3>
+            <p><strong>Jawaban:</strong> Aplikasi ini menggunakan API data cuaca dari weatherstack untuk
+                memberikan informasi cuaca yang akurat kepada pengguna. Aplikasi ini juga menggunakan API berita dari 
+                mediastack untuk menampilkan berita yang aktual.</p>
+
+            <h3>d. Salah satu pola arsitektur API adalah SOAP. Apa itu?</h3>
+            <p><strong>Jawaban:</strong> SOAP adalah singkatan dari Simple Object Access Protocol. 
+            Ini adalah protokol komunikasi yang digunakan untuk pertukaran pesan antara aplikasi dan sistem yang berbeda,
+            terutama dalam lingkungan jaringan. SOAP adalah salah satu metode yang digunakan untuk mengirim permintaan
+            dan menerima respons antara dua perangkat lunak atau aplikasi yang beroperasi pada platform yang berbeda.
+            Berikut adalah beberapa karakteristik dan konsep kunci terkait dengan SOAP:
+            <br><br>1. XML-Based: SOAP menggunakan format pesan yang berbasis XML untuk menggambarkan data dan operasi yang 
+            dikirimkan antara aplikasi. Ini membuatnya mudah dibaca dan diinterpretasikan oleh berbagai bahasa pemrograman.<br>
+            <br>2. Protokol Agnostik: SOAP dapat digunakan dengan berbagai protokol jaringan, termasuk HTTP, SMTP, TCP,
+            dan lainnya. Meskipun SOAP sering digunakan di atas HTTP, itu bukanlah ketergantungan protokolnya.<br>
+            <br>3. Pesan Berorientasi: SOAP memungkinkan aplikasi untuk mengirim pesan yang berisi permintaan dan respons
+            antara klien dan layanan. Pesan ini terstruktur dengan baik dan mencakup informasi yang diperlukan untuk memanggil
+            operasi atau layanan yang ditentukan.<br>
+            <br>4. WSDL (Web Services Description Language): SOAP sering dikombinasikan dengan WSDL, yang merupakan bahasa
+            deskripsi untuk mendefinisikan layanan web. WSDL mendokumentasikan operasi yang tersedia, format pesan, dan lokasi
+            endpoint layanan.<br>
+            <br>5. Interoperabilitas: Salah satu keuntungan utama SOAP adalah kemampuannya untuk bekerja di berbagai platform
+            dan bahasa pemrograman. Ini memungkinkan komunikasi yang mulus antara aplikasi yang berbeda.<br>
+            <br>6. Keamanan: SOAP mendukung berbagai mekanisme keamanan, seperti WS-Security, yang memungkinkan enkripsi
+            dan otentikasi pesan untuk melindungi privasi dan keamanan data.<br><br>
+            Meskipun SOAP masih digunakan dalam beberapa lingkungan bisnis dan enterprise, protokol ini telah kehilangan
+            popularitasnya di dunia pengembangan web modern, terutama dengan munculnya REST (Representational State Transfer)
+            yang lebih sederhana dan lebih ringan. REST menggunakan HTTP secara alami dan cenderung lebih mudah digunakan dalam 
+            banyak kasus pengembangan web saat ini. Namun, SOAP masih digunakan dalam beberapa aplikasi yang memerlukan tingkat 
+            keamanan dan ketatnya definisi layanan.</p>
+
+            <h3>e. Gambar Pendukung</h3>
+            <img src="/img/gambar-pendukung.jpeg" alt="Gambar Pendukung">
+        </div>
+    </div>
+    {{>footer}}
+</body>
+
+</html>

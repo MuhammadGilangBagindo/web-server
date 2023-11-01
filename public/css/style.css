@@ -1,0 +1,200 @@
+body {
+    color: #ffffff;
+    font-family: Verdana;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    padding: 20px 0;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #f88800;
+}
+
+p {
+    color: #ffffff;
+    font-family: Tahoma; 
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+img.portrait {
+    height: 32%;
+    width: 32%;
+    border: 5px; 
+    border-style: ridge; 
+    border-color: #f99417;
+    border-radius: 10px;
+}
+
+.bio {
+    background-color: #ffffff; 
+    padding: 20px;
+    border: 5px;
+    border-color: #f99417;
+    border-style: ridge;
+    border-radius: 10px;
+    width: 100%;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.bio p {
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #5d3891;
+    border-radius: 10px;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    margin-top: 5px;
+    background: #5d3891;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+footer {
+    border-top: 1px solid #ffffff;
+    margin-top: 10px;
+    text-align: right;
+}
+
+footer p {
+    font-size: 15px;
+    font-family: Verdana;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: left;
+}
+
+.faq {
+    background-color: white; 
+    padding: 20px;
+    border-radius: 10px; 
+    text-align: justify;
+    max-width: 100%; 
+    margin: 0 auto;
+}
+
+.faq h2 {
+    color: #5d3891;
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.faq h3 {
+    color: #f99417;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.faq p {
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.faq img {
+    max-width: 100%;
+    border: 2px solid #5d3891;
+    border-radius: 10px;
+}
+/* Tambahan CSS untuk halaman berita */
+.berita-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.berita-item {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.berita-item h3 {
+    color: #5d3891;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.berita-item p {
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.berita-item a {
+    color: #a386ca;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.berita-item a:hover {
+    color: #6f00ff;
+}
