@@ -6,7 +6,7 @@ const forecast = require('./utils/prediksiCuaca')
 const axios = require('axios');
 
 const app = express()
-const port = process.env.PORT || 4000
+const port = process.env.PORT || 3000
 
 // Mendefinisikan jalur/path untuk konfigurasi express
 const direktoriPublic = path.join(__dirname, '../public')
@@ -131,5 +131,5 @@ app.get('*',(req,res)=>{
 })
 
 app.listen(port, () => {
-console.log('Server berjalan pada port '+ port)
+    console.log('Server berjalan pada port '+ port)
 })
